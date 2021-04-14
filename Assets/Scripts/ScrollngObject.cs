@@ -8,7 +8,11 @@ public class ScrollngObject : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
+        if (!GameManager.instance.isGameover)
+        {
+            transform.Translate(Vector3.left * speed * Time.deltaTime);
+        }
+        
         if (Input.GetMouseButtonDown(1))
         {
             speed = 50f;
