@@ -15,7 +15,7 @@ public class ScrollngObject : MonoBehaviour
         
         if (Input.GetMouseButtonDown(1))
         {
-            speed = 50f;
+            speed = 30f;
         }else if (Input.GetMouseButtonUp(1))
         {
             speed = 10f;

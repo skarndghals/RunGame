@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public AudioClip deathClip;
-    public float jumpForce = 700f;
+    public float jumpForce = 500f;
 
     private int jumpCount = 0;
     private bool isGrounded = false;
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
         }
         if(Input.GetMouseButtonUp(0) && playerRigidbody.velocity.y > 0)
         {
-            playerRigidbody.velocity = playerRigidbody.velocity * 0.5f;
+            playerRigidbody.velocity = playerRigidbody.velocity * 0.6f;
         }
         animator.SetBool("Grounded", isGrounded);
     }
