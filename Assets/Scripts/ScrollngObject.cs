@@ -6,6 +6,7 @@ public class ScrollngObject : MonoBehaviour
 {
     public float speed = 10f;
 
+
     void Update()
     {
         if (!GameManager.instance.isGameover)
@@ -15,7 +16,7 @@ public class ScrollngObject : MonoBehaviour
         
         if (Input.GetMouseButtonDown(1))
         {
-            speed = 30f;
+            speed = 20f;
         }else if (Input.GetMouseButtonUp(1))
         {
             speed = 10f;
